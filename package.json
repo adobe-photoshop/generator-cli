@@ -1,19 +1,32 @@
 {
   "name": "generator-cli",
-  "version": "0.0.1",
+  "version": "0.0.1-dev",
   "description": "Command line launcher for Photoshop Generator",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "optimist": "~0.3.5",
+    "q": "0.9.6",
+    "semver": "~2.1.0",
+    "resolve": "~0.6.1"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.5.4"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/joelrbrandt/generator-cli.git"
   },
+  "bin": {
+    "generator": "bin/generator"
+  },
+  "preferGlobal": true,
   "author": "Joel Brandt <joelrbrandt@gmail.com>",
   "license": "MIT",
   "readmeFilename": "README.md",
-  "gitHead": "ecd51d96d3e7e5bfd2662df0c9ad462cc8537aae",
   "bugs": {
     "url": "https://github.com/joelrbrandt/generator-cli/issues"
   }
